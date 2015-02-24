@@ -5,7 +5,7 @@ class Zapatazo(Base):
 	__tablename__ = 'zapatazos'
 	id = Column(Integer, primary_key=True)
 	title = Column(Text, unique=True)
-	#img_link
+	img_link = Column(Text, unique=True)
 
 	def __repr__(self):
 		return '<Zapatazo %r>' % (self.title)
