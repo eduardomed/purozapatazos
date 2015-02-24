@@ -7,7 +7,14 @@ init_db()
 
 @app.route('/')
 def main_page():
+	#TODO
+	#Agarrar la info de las fotos y pasarlas al html
+	#¿Como agarrar un cierto numero de entradas en vez de todos?
+
+	#zapatazos = db_session.query(Zapatazo).all()
+	#return render_template('index.html', zapatazos = zapatazos)
 	return render_template('index.html')
+
 
 @app.route('/purozapatazos')
 def purozapatazos():
