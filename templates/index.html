@@ -1,13 +1,10 @@
 {% extends "base.html" %}
-
 {% block content %}
-
-
-ZAPATAZOS ZAPATAZOS ZAPATAZOS
-
-<!-- Quieres mostrar los zapatazos en forma grid
-La info de cada zapatazo tiene que ser puesta en el lugar correcto
-Puedes empezar arreglando la parte de alfrente para entender que es lo que 
-tienes que pasar desde atras. -->
-
+<div class="row">
+	{% for zapatazo in zapatazos %}
+	<div class="col-md-4">
+		<img src="{{zapatazo.imglink}}" alt="prueba">
+	</div>
+	{% endfor %}
+</div>
 {% endblock %}

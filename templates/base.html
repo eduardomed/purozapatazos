@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- TOD - Cambio de lang -->
+<html lang="en"> <!-- TODO - Cambio de lang -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Puro Zapatazos</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="text/javascript" src="static/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <h1>Zapata</h1>
-    <h2>
-      <a href="/purozapatazos">#purozapatazos</a>
-    </h2>
-    {% block content%}
-    {% endblock %}
+    <div class="container">
+      <div class="row">
+        <center><h1>ZAPATA</h1></center>
+      </div>
+      {% block content %}
+      {% endblock %}
+    </div>
   </body>
 </html>
