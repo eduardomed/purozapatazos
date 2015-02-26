@@ -17,7 +17,7 @@ def main_page():
 	
 
 
-@app.route('/purozapatazos')
+@app.route('/purozapatazos/')
 def purozapatazos():
 	return render_template('purozapatazos.html')
 
