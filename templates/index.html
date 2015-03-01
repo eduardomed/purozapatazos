@@ -1,10 +1,15 @@
 {% extends "base.html" %}
+
 {% block content %}
-<div class="row">
+<div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
 	<div class="col-md-4">
-		<img src="{{zapatazo.imglink}}" alt="prueba">
+		<img src="{{zapatazo.imglink}}" alt="prueba"/>
+		{{zapatazo.title}}
 	</div>
 	{% endfor %}
 </div>
+<input type="button" id="driver" value="Load Data" />
+
 {% endblock %}
+
