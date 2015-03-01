@@ -10,3 +10,12 @@ class Zapatazo(Base):
 	def __repr__(self):
 		return '<Zapatazo %r>' % (self.id)
 
+	@property 
+	def serialize(self):
+		return {
+       			'id' : self.id,
+       			'title' : self.title,
+       			'imglink' : self.imglink
+       		   }
+
+
