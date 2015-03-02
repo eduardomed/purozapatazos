@@ -4,7 +4,9 @@
 <div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
 	<div class="col-md-3">
-		<img src="{{zapatazo.imglink}}" alt="{{zapatazo.title}}"/>
+		<a href="{{ url_for('unzapatazo', the_title = zapatazo.title) }}">
+			<img src="{{zapatazo.imglink}}" alt="{{zapatazo.title}}">
+		</a>
 	</div>
 	{% endfor %}
 </div>
