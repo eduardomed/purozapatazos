@@ -10,18 +10,16 @@ init_db()
 def main_page():
 	#TODO
 
-	zapatazos = db_session.query(Zapatazo).limit(3)
+	zapatazos = db_session.query(Zapatazo).limit(4)
 	# print "zapatazos: ", zapatazos
 	return render_template('index.html', zapatazos = zapatazos)
 	
 @app.route('/load_more.json')
 def load_more():
-	#return JSON object? or return the new query?
-
 	offset = request.args.get('offset', '')
-	print "offset: ", offset
-	zapatazos = db_session.query(Zapatazo).offset(offset).limit(3)
-	print "ZAPATAZO: ", zapatazos
+	# print "offset: ", offset
+	zapatazos = db_session.query(Zapatazo).offset(offset).limit(4)
+	# print "ZAPATAZO: ", zapatazos
 	return jsonify(Zapatazo=[i.serialize for i in zapatazos])     
 
 @app.route('/purozapatazos/')

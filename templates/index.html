@@ -3,12 +3,12 @@
 {% block content %}
 <div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
-	<div class="col-md-4">
-		<img src="{{zapatazo.imglink}}" alt="prueba"/>
-		{{zapatazo.title}}
+	<div class="col-md-3">
+		<img src="{{zapatazo.imglink}}" alt="{{zapatazo.title}}"/>
 	</div>
 	{% endfor %}
 </div>
+
 <input type="button" id="driver" value="Load Data" />
 
 {% endblock %}
