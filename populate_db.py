@@ -5,31 +5,31 @@ from models import Zapatazo
 
 init_db()
 
-# z1 = Zapatazo(title = 'Primer Zapatazo', imglink = 'static/images/zapatazo1.jpg')
-# db_session.add(z1)
+z1 = Zapatazo(title = 'primer-zapatazo', imglink = 'static/images/zapatazo1.jpg')
+db_session.add(z1)
 
-# z2 = Zapatazo(title = 'Segundo Zapatazo', imglink = 'static/images/zapatazo2.jpg')
-# db_session.add(z2)
+z2 = Zapatazo(title = 'segundo-zapatazo', imglink = 'static/images/zapatazo2.jpg')
+db_session.add(z2)
 
-# z3 = Zapatazo(title = 'Tercer Zapatazo', imglink = 'static/images/zapatazo3.jpg')
-# db_session.add(z3)
+z3 = Zapatazo(title = 'tercer-zapatazo', imglink = 'static/images/zapatazo3.jpg')
+db_session.add(z3)
 
-# z4 = Zapatazo(title = 'Cuarto Zapatazo', imglink = 'static/images/zapatazo4.jpg')
-# db_session.add(z4)
+z4 = Zapatazo(title = 'cuarto-zapatazo', imglink = 'static/images/zapatazo4.jpg')
+db_session.add(z4)
 
-# z5 = Zapatazo(title = 'Quinto Zapatazo', imglink = 'static/images/zapatazo5.jpg')
-# db_session.add(z5)
+z5 = Zapatazo(title = 'quinto-zapatazo', imglink = 'static/images/zapatazo5.jpg')
+db_session.add(z5)
 
-# z6 = Zapatazo(title = 'Sexto Zapatazo', imglink = 'static/images/zapatazo6.jpg')
-# db_session.add(z6)
+z6 = Zapatazo(title = 'sexto-zapatazo', imglink = 'static/images/zapatazo6.jpg')
+db_session.add(z6)
 
-z7 = Zapatazo(title = 'Septimo Zapatazo', imglink = 'static/images/zapatazo7.jpg')
+z7 = Zapatazo(title = 'septimo-zapatazo', imglink = 'static/images/zapatazo7.jpg')
 db_session.add(z7)
 
-z8 = Zapatazo(title = 'Octavo Zapatazo', imglink = 'static/images/zapatazo8.jpg')
+z8 = Zapatazo(title = 'octavo-zapatazo', imglink = 'static/images/zapatazo8.jpg')
 db_session.add(z8)
 
-z9 = Zapatazo(title = 'Noveno Zapatazo', imglink = 'static/images/zapatazo9.jpg')
+z9 = Zapatazo(title = 'noveno-zapatazo', imglink = 'static/images/zapatazo9.jpg')
 db_session.add(z9)
 
 
