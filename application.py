@@ -9,7 +9,6 @@ init_db()
 @app.route('/')
 def main_page():
 	#TODO
-
 	zapatazos = db_session.query(Zapatazo).limit(4)
 	# print "zapatazos: ", zapatazos
 	return render_template('index.html', zapatazos = zapatazos)
@@ -22,9 +21,9 @@ def load_more():
 	# print "ZAPATAZO: ", zapatazos
 	return jsonify(Zapatazo=[i.serialize for i in zapatazos])     
 
-@app.route('/purozapatazos/')
+@app.route('/acerca/')
 def purozapatazos():
-	return render_template('purozapatazos.html')
+	return render_template('acerca.html')
 
 if __name__ == '__main__':
     app.debug = True
