@@ -3,7 +3,6 @@ from database import init_db, db_session
 from models import Zapatazo
 
 app = Flask('purozapatazos')
-# static_folder='purozapatazos/static'
 init_db()
 
 
@@ -28,7 +27,6 @@ def purozapatazos():
 
 @app.route('/<the_title>/')
 def unzapatazo(the_title):
-	#TODO - query for specific zapatazo and return 
 	zapatazo = db_session.query(Zapatazo).filter(Zapatazo.title == the_title).first()
 	print "ZAPATAZO: ", zapatazo
 	return render_template('unzapatazo.html', zapatazo = zapatazo)
