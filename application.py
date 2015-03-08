@@ -9,15 +9,15 @@ init_db()
 @app.route('/')
 def main_page():
 	#TODO
-	zapatazos = db_session.query(Zapatazo).limit(4)
+	zapatazos = db_session.query(Zapatazo).limit(12)
 	print "zapatazos: ", zapatazos
 	return render_template('index.html', zapatazos = zapatazos)
 	
 @app.route('/load_more.json')
 def load_more():
-	offset = request.args.get('offset', '')
+	offset = request.args.get('offset')
 	# print "offset: ", offset
-	zapatazos = db_session.query(Zapatazo).offset(offset).limit(4)
+	zapatazos = db_session.query(Zapatazo).offset(offset).limit(12)
 	# print "ZAPATAZO: ", zapatazos
 	return jsonify(Zapatazo=[i.serialize for i in zapatazos])     
 
@@ -25,10 +25,10 @@ def load_more():
 def purozapatazos():
 	return render_template('acerca.html')
 
-@app.route('/<the_title>/')
-def unzapatazo(the_title):
-	zapatazo = db_session.query(Zapatazo).filter(Zapatazo.title == the_title).first()
-	print "ZAPATAZO: ", zapatazo
+@app.route('/<int:the_number>/')
+def unzapatazo(the_number):
+	zapatazo = db_session.query(Zapatazo).filter(Zapatazo.id == the_number).one()
+	# print "ZAPATAZO: ", zapatazo
 	return render_template('unzapatazo.html', zapatazo = zapatazo)
 
 if __name__ == '__main__':

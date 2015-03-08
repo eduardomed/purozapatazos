@@ -4,7 +4,7 @@ from database import Base
 class Zapatazo(Base):
 	__tablename__ = 'zapatazos'
 	id = Column(Integer, primary_key=True)
-	title = Column(Text, unique=True)
+	# title = Column(Text, unique=True)
 	imglink = Column(Text, unique=True)
 
 	def __repr__(self):
@@ -14,7 +14,6 @@ class Zapatazo(Base):
 	def serialize(self):
 		return {
        			'id' : self.id,
-       			'title' : self.title,
        			'imglink' : self.imglink
        		   }
 

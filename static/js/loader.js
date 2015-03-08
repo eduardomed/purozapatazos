@@ -1,4 +1,4 @@
-var offset = 3
+var offset = 12
 
 $(document).ready(function() {
   $("#driver").click(function(event){
@@ -10,11 +10,15 @@ $(document).ready(function() {
         for (var index in jd["Zapatazo"]){
             var zapatazo = jd["Zapatazo"][index]
             var tile = $("<div></div>").addClass("col-md-3")
-            $("<img>").attr("src",  zapatazo["imglink"]).attr("alt", zapatazo["title"]).appendTo(tile)
+            var link = $("<a></a>")
+            // console.log(zapatazo["id"])
+            // console.log(zapatazo["imglink"])
+            $("<img>").attr("src",  zapatazo["imglink"]).attr("alt", "TEST").appendTo(link)
+            $(link).attr("href", "/" + zapatazo["id"] + "/").appendTo(tile)
             $('#zapatazos').append(tile)
         }
         
-        offset += 3
+        offset += 12
 
       }
     });

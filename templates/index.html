@@ -3,15 +3,15 @@
 {% block content %}
 <div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
-	<div class="col-md-3">
-		<a href="{{ url_for('unzapatazo', the_title = zapatazo.title) }}">
-			<img src="{{zapatazo.imglink}}" alt="{{zapatazo.title}}">
+	<div class="col-md-3 img">
+		<a href="{{ url_for('unzapatazo', the_number = zapatazo.id) }}">
+			<img src="{{zapatazo.imglink}}" alt="TEST">
 		</a>
 	</div>
 	{% endfor %}
 </div>
 
-<input type="button" id="driver" value="Load Data" />
+<input type="button" id="driver" value="Load more" />
 
 {% endblock %}
 
