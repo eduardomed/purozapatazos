@@ -4,6 +4,9 @@ apt-get -qqy install python-psycopg2
 echo "pip installing requirements.txt"
 pip install -qr /vagrant/requirements.txt
 
+echo "populating db"
+python /vagrant/populate_db.py
+
 # Edit the following to change the name of the database user that will be created:
 APP_DB_USER=purozapatazos
 APP_DB_PASS=dbpass
@@ -102,6 +105,8 @@ echo "Successfully created PostgreSQL dev virtual machine."
 echo ""
 print_db_usage
 
+# echo "populating db"
+# python /vagrant/populate_db.py
 
 su vagrant
 
