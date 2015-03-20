@@ -4,14 +4,43 @@
 <div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
 	<div class="col-md-3 img">
-		<a href="{{ url_for('unzapatazo', the_number = zapatazo.id) }}">
-			<img src="{{zapatazo.imglink}}" alt="TEST">
+		<a data-toggle="modal" data-target="#zapatazoModal" data-zapatazo-id="{{zapatazo.id}}" data-zapatazo-img="{{zapatazo.imglink}}">
+			<img src="{{zapatazo.imglink}}" alt="{{zapatazo.id}}">
 		</a>
 	</div>
+
 	{% endfor %}
 </div>
 
 <input type="button" id="driver" value="Load more" />
+
+<!-- Modal -->
+<div class="modal fade" id="zapatazoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Puro Zapatazos</h4>
+      </div>
+      <div class="modal-body">
+      	<center>
+          <img id="zapatazo-modal-img" />
+      	</center> 
+      </div>
+      <div class="modal-footer">
+        <a class="twitter-hashtag-button"
+	        href="https://twitter.com/intent/tweet?button_hashtag=zapatazos&text=My%20story%20is%20about%20what's%20happening%20today"
+	        data-related="twitter">
+	      Tweet #zapatazos
+	    </a>
+      	<a target="_blank" id="zapatazo-modal-link">
+       	 Enlace
+      	</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}
 

@@ -5,7 +5,7 @@ echo "pip installing requirements.txt"
 pip install -qr /vagrant/requirements.txt
 
 echo "populating db"
-python -qr /vagrant/populate_db.py
+python /vagrant/populate_db.py
 
 # Edit the following to change the name of the database user that will be created:
 APP_DB_USER=purozapatazos
