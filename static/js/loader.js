@@ -12,7 +12,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#zapatazoModal').on('show.bs.modal', function (event) {
+    $('#zapatazoModal').on('show.bs.modal', function(event) {
         openModal(event)
     })
 
@@ -35,16 +35,8 @@ function loadMore(){
             $(link).appendTo(tile)
             $('#zapatazos').append(tile)
         }
-        
-        // offset += 12
-
       }
     });
-
-      // });
-
-    
-
 }
 
 
