@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="twitter:card" content="photo" />
-	<meta name="twitter:site" content="@purozapatazos" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="{{zapatazo.imglink}}" />
-	<meta name="twitter:url" content="http://zapatazos.herokuapp.com/{{zapatazo.id}}" />
-
+	  <meta name="twitter:site" content="@purozapatazos" />
+	  <meta name="twitter:title" content="Puro Zapatazos" />
+	  <meta name="twitter:image" content="{{zapatazo.imglink}}" />
+	  <meta name="twitter:url" content="http://zapatazos.herokuapp.com/{{zapatazo.id}}" />
     <title>Puro Zapatazos</title>
     <link rel="stylesheet" href="../static/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/style.css"> 
@@ -31,13 +30,16 @@
 			<div>
 				<center>
 					<img src="{{zapatazo.imglink}}" alt="{{zapatazo.id}}">
-					<a class="twitter-hashtag-button"
-		  	        href="https://twitter.com/intent/tweet?button_hashtag=zapatazos"
-		  	        data-related="twitter"
-		  	        data-url="http://zapatazos.herokuapp.com/{{zapatazo.id}}">
-		  	      		Tweet #zapatazos
-		  	      	</a>
 				</center>
+        <div class="unzapatazo-footer">
+          <a class="twitter-hashtag-button"
+              href="https://twitter.com/intent/tweet?button_hashtag=zapatazos"
+              data-related="twitter"
+              data-url="http://zapatazos.herokuapp.com/{{zapatazo.id}}"
+              data-size="large">
+                Tweet #zapatazos
+          </a>
+        </div>
 			</div>
 		</div>
       <script>

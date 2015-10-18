@@ -14,6 +14,16 @@
 	box-shadow: 0 0 10px #ccc; 
 }
 
+.modal-footer {
+	padding-bottom: 3%;
+  	padding-right: 30%;
+}
+
+.unzapatazo-footer {
+	margin-left: 45%;
+	margin-top: 3%;
+}
+
 #zapatazo-modal-link img {
 	max-height: 25px;
 }
@@ -26,3 +36,4 @@
 	padding-left: 10px;
 	padding-right: 10px;
 }
+

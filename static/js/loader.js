@@ -41,7 +41,7 @@ function loadMore(){
 
 
 function openModal(event){
-    console.log("in the event handler")
+    console.log("in the event handler");
     var button = $(event.relatedTarget) // Button that triggered the modal
 
     // Extract info from data-* attributes
@@ -53,5 +53,17 @@ function openModal(event){
     var modal = $("#zapatazoModal")
     modal.find("#zapatazo-modal-img").attr('src', zapatazoImage)
     modal.find("#zapatazo-modal-link").attr('href', "/" + zapatazoID)
+    console.log(modal.find(".twitter-hashtag-button"));
+    modal.find(".twitter-hashtag-button").attr('data-url', "http://zapatazos.herokuapp.com/" + zapatazoID);
+    console.log(modal.find(".twitter-hashtag-button"));
+    
+    // twttr.widgets.load(button);
+    // twttr.events.bind(
+    //   'loaded',
+    //   function (event) {
+    //     event.widgets.load();
+    //   }
+    // );
+
 }
   
