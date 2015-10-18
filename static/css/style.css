@@ -14,17 +14,23 @@
 	box-shadow: 0 0 10px #ccc; 
 }
 
-.modal-footer {
-	padding-bottom: 3%;
-  	padding-right: 30%;
-}
-
 .unzapatazo-footer {
 	margin-left: 45%;
 	margin-top: 3%;
 }
 
-#zapatazo-modal-link img {
+.zapata-header {
+	max-width: 45%;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+/*.modal-footer {
+	padding-bottom: 3%;
+  	padding-right: 30%;
+}*/
+
+/*#zapatazo-modal-link img {
 	max-height: 25px;
 }
 
@@ -35,5 +41,5 @@
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-}
+}*/
 
