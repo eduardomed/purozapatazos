@@ -4,43 +4,11 @@
 <div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
 	<div class="col-md-3 img">
-		<a data-toggle="modal" data-target="#zapatazoModal" data-zapatazo-id="{{zapatazo.id}}" data-zapatazo-img="{{zapatazo.imglink}}">
-			<img src="{{zapatazo.imglink}}" alt="{{zapatazo.id}}">
-		</a>
+    <a href="/{{zapatazo.id}}">
+      <img src="{{zapatazo.imglink}}" alt="{{zapatazo.id}}">
+    </a>
 	</div>
 
 	{% endfor %}
 </div>
-
-<!-- Modal -->
-<div class="modal fade" id="zapatazoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Puro Zapatazos</h4>
-      </div> -->
-      <div class="modal-body">
-      	<center>
-          <img id="zapatazo-modal-img" alt="zapatazo">
-      	</center> 
-      </div>
-      <div class="modal-footer">
-          <a class="twitter-hashtag-button"
-  	        href="https://twitter.com/intent/tweet?button_hashtag=zapatazos"
-  	        data-related="twitter"
-            data-url=""
-            data-size="large">
-  	      Tweet #zapatazos
-  	      </a>
-        	<a target="_blank" id="zapatazo-modal-link">
-       	 <img src="/static/images/el_enlace.png" alt="link_image">
-      	</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 {% endblock %}
-
