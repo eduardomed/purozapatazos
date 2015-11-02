@@ -25,21 +25,18 @@
     margin-top: 45px;
 }
 
-/*.modal-footer {
-	padding-bottom: 3%;
-  	padding-right: 30%;
-}*/
-
-/*#zapatazo-modal-link img {
-	max-height: 25px;
+.acerca-footer {
+	position: fixed;
+	top: 90%;
+	left: 94%;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 25px;
+	border-radius: 50%;
+	border: 2px solid black;
+	padding: 6px;
 }
 
-#zapatazo-modal-img {
-	max-height: 350px;
-	max-width: 290px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-}*/
-
+.acerca-footer a {
+	text-decoration: none;
+	color: black;
+}
