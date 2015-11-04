@@ -20,9 +20,9 @@
 }
 
 .zapata-header {
-	max-width: 45%;
-    margin-bottom: 45px;
-    margin-top: 45px;
+	max-width: 40%;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .acerca-footer {
@@ -39,4 +39,46 @@
 .acerca-footer a {
 	text-decoration: none;
 	color: black;
+}
+
+@media (max-width: 500px) {
+	.col-md-3 img  {
+		/*padding: none;
+		max-width: none;
+		max-height: none;*/
+	    border-bottom: 1px solid #dbdbdb;
+    	text-align: center;
+    	padding: 5px 0px;
+	}
+
+	.acerca-footer {
+		position: fixed;
+		top: 12px;
+		left: 86%;
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 15px;
+		border-radius: 50%;
+		border: 2px solid black;
+		padding: 6px;
+		z-index: 100;
+	}
+
+	.header {
+		position: fixed;
+		top: 0;
+		z-index: 5;
+		width: 100%;
+		background: rgba(255,255,255,0.9);
+	}
+
+	.zapata-header {
+		max-width: 30%;
+	    margin-bottom: 12px;
+	    margin-top: 13px;
+	}
+
+	#zapatazos {
+		margin-top: 60px;
+		text-align: center;
+	}
 }
