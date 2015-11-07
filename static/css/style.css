@@ -41,16 +41,43 @@
 	color: black;
 }
 
-.acerca {
+.acerca-quote {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 25px;
+	text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.acerca-quote a {
+	text-decoration: none;
+	color: black;
+}
+
+.acerca-text-top {
+	text-align: justify;
+	padding-right: 15%;
+	padding-left: 15%;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+.acerca-text-bottom {
+	text-align: justify;
+	padding-right: 15%;
+	padding-left: 15%;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+.acerca-img {
+	text-align: center;
+}
+
+.acerca-img img {
+	max-width: 100%;
 }
 
 @media (max-width: 500px) {
 	.col-md-3 img  {
-		/*padding: none;
-		max-width: none;
-		max-height: none;*/
 	    border-bottom: 1px solid #dbdbdb;
     	text-align: center;
     	padding: 5px 0px;
@@ -85,5 +112,13 @@
 	#zapatazos {
 		margin-top: 60px;
 		text-align: center;
+	}
+
+	.acerca-text-top {
+	text-align: justify;
+	padding-right: 15%;
+	padding-left: 15%;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	margin-top: 64px;
 	}
 }

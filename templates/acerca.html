@@ -1,25 +1,62 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en"> <!-- TODO - Cambio de lang -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puro Zapatazos</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css"> 
+    <script type="text/javascript" src="../static/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Raleway&subset=latin-ext' rel='stylesheet' type='text/css'>
+  </head>
 
-{% block content %}
+  <body>
+    <div class="container">
+      <div class="row header">
+        <a href="/">
+          <center><img class="zapata-header" src="/static/images/zapata.png"></center>
+        </a>
+      </div>
 
-Caricaturista, pintor y escritor venezolano, Pedro Leon Zapata fue alguien que supo interpretar a su país con un lápiz a la mano. Paso décadas narrando y criticando la realidad social venezolana a punta de sus famosos #zapatazos. La linea temática fundamental del humorismo periodístico de Zapata se basaba en la denuncia de las de las marginaciones y discriminaciones provocadas por el desarrollo caótico que experimentó la Venezuela petrolera.
-<br>
-<br>
-<div class="acerca">
-	<center>
-		<img src="/static/images/conductores_zapata.png" alt="[Conductores de Venezuela]">
-	<br>
-	<br>
-		<a href="https://medium.com/espanol/panegirico-a-trazo-de-lapiz-4d2aabe2d387#.c2z23wi8e">
-			<em>Siempre tuvo la línea justa para contar nuestra historia, para mostrar a la Venezuela real, profunda y sentida a través de su lápiz. Para Zapata, el país era una hoja en blanco que construir a diario.</em>
-		</a>
-	</center>
-</div>
-<br>
-<br>
-<em>Purozapatazos</em> es un rincón digital para honrar la obra de Zapata. Auténtico genio artístico, su legado traspasa su vida y se queda plasmado en las muchas sabidurías que trazó, pintó, y escribió. Todos los #zapatazos mostrados aquí fueron recolectados de El Nacional, periódico en el cual Zapata concreto su leyenda. 
-<br>
-<br>
-Para cualquier pregunta: <a href="https://twitter.com/purozapatazos">@purozapatazos</a>.
-
-{% endblock %}
+		<div class="acerca-text-top">
+			Caricaturista, pintor y escritor venezolano, Pedro León Zapata fue alguien que supo interpretar a su país con un lápiz a la mano. Paso décadas narrando y criticando la realidad social venezolana a punta de sus famosos #zapatazos. La linea temática fundamental del humorismo periodístico de Zapata se basaba en la denuncia de las de las marginaciones y discriminaciones provocadas por el desarrollo caótico que experimentó la Venezuela petrolera.
+		</div>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<div>
+			<div class="acerca-img">
+				<a href="http://caracasshots.blogspot.com/search?q=zapata">
+					<img src="/static/images/conductores_zapata.jpg" alt="[Conductores de Venezuela]">
+				</a>
+			</div>
+			<br>
+			<br>
+			<div class="acerca-quote">
+				<a href="https://medium.com/espanol/panegirico-a-trazo-de-lapiz-4d2aabe2d387#.c2z23wi8e">
+					<em>«Siempre tuvo la línea justa para contar nuestra historia, para mostrar a la Venezuela real, profunda y sentida a través de su lápiz. Para Zapata, el país era una hoja en blanco que construir a diario»</em>
+				</a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<div class="acerca-text-bottom">
+			<em>Purozapatazos</em> es un rincón digital para honrar la obra de Zapata. Auténtico genio artístico, su legado traspasa su vida y se queda plasmado en las muchas sabidurías que trazó, pintó, y escribió. Todos los #zapatazos mostrados aquí fueron recolectados de El Nacional, periódico en el cual Zapata concretó su leyenda. 
+			<br>
+			<br>
+			Para cualquier pregunta: <a href="https://twitter.com/purozapatazos">@purozapatazos</a>.
+		</div>
+	</div>   
+    <script>
+      window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+    </script>
+  </body>
+</html>
