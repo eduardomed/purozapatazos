@@ -3,8 +3,8 @@
 {% block content %}
 <div class="row" id="zapatazos">
 	{% for zapatazo in zapatazos %}
-	<div class="col-md-3 img">
-    <a href="/{{zapatazo.id}}">
+	<div class="col-md-3 col-sm-6 img">
+    <a href="/{{zapatazo.id}}" target="_blank">
       <img src="{{zapatazo.imglink}}" alt="{{zapatazo.id}}">
     </a>
 	</div>
