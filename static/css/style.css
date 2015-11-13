@@ -76,7 +76,7 @@
 	max-width: 100%;
 }
 
-@media handheld, screen and (max-width: 500px) {
+@media handheld, screen and (max-width: 980px) {
 	.col-md-3 img  {
 	    border-bottom: 1px solid #dbdbdb;
     	text-align: center;

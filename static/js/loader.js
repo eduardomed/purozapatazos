@@ -25,12 +25,12 @@ function loadMore(){
         // console.log(jd)
         // console.log(jd["Zapatazo"])
         for (var index in jd["Zapatazo"]){
-            var zapatazo = jd["Zapatazo"][index]
-            var tile = $("<div></div>").addClass("col-md-3")
-            var link = $("<a></a>").attr("href",zapatazo["id"]);
-            $("<img>").attr("src",  zapatazo["imglink"]).attr("alt", zapatazo["id"] ).appendTo(link)
-            $(link).appendTo(tile)
-            $('#zapatazos').append(tile)
+            var zapatazo = jd["Zapatazo"][index];
+            var tile = $("<div></div>").addClass("col-md-3").addClass("col-sm-6");
+            var link = $("<a></a>").attr("href",zapatazo["id"]).attr("target","_blank");
+            $("<img>").attr("src",  zapatazo["imglink"]).attr("alt", zapatazo["id"] ).appendTo(link);
+            $(link).appendTo(tile);
+            $('#zapatazos').append(tile);
         }
       }
     });
