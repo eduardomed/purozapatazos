@@ -83,6 +83,10 @@
     	padding: 5px 0px;
 	}
 
+	.col-sm-6 {
+		margin-top: 6%;
+	}
+
 	.acerca-footer {
 		position: fixed;
 		top: 12px;
@@ -119,6 +123,6 @@
 	padding-right: 15%;
 	padding-left: 15%;
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
-	margin-top: 64px;
+	margin-top: 69px;
 	}
 }
