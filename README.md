@@ -4,7 +4,7 @@ Un sitio para honrar la obra y el legado de [Pedro León Zapata](http://www.puro
 
 www.purozapatazos.com
 
-@purozapatazos
+[@purozapatazos](https://twitter.com/purozapatazos)
 
 
 
