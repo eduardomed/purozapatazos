@@ -27,9 +27,16 @@ def purozapatazos():
 
 @app.route('/<int:the_number>/')
 def unzapatazo(the_number):
-	zapatazo = db_session.query(Zapatazo).filter(Zapatazo.id == the_number).one()
+	try:
+		zapatazo = db_session.query(Zapatazo).filter(Zapatazo.id == the_number).one()
+	except Exception as e:
+		return render_template('404.html'), 404
 	# print "ZAPATAZO: ", zapatazo
 	return render_template('unzapatazo.html', zapatazo = zapatazo)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':
     app.debug = True
