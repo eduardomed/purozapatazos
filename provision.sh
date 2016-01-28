@@ -2,7 +2,7 @@ apt-get -qqy update
 apt-get -qqy install python-pip
 apt-get -qqy install python-psycopg2
 echo "pip installing requirements.txt"
-pip install -qr /vagrant/requirements.txt
+sudo pip install -qr /vagrant/requirements.txt
 
 echo "populating db"
 python /vagrant/populate_db.py
